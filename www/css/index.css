@@ -1,0 +1,93 @@
+/*styles*/
+
+html, body,ul,h3 {
+    margin: 0;
+    padding: 0;
+}
+
+h1,h2{
+    color: #dfcc20;
+}
+
+body {
+    background-image: url("../img/fon1.jpg");
+    background-size: cover;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+}
+
+.footer nav {
+    padding-bottom: 10px;
+}
+
+.footer nav i {
+    padding: 0 20px 0 20px;
+    font-size: 20px;
+    color: white;
+}
+
+header {
+
+}
+
+header img {
+    width: 56px;
+    padding: 0 0 0 30px;
+}
+
+.wrapper {
+    text-align: center;
+    padding: 60px 15px 0 15px;
+}
+
+.logo_parent {
+
+}
+
+.logo_parent img {
+    width: 150px;
+}
+
+.data-block {
+    display: inline-block;
+}
+
+ul.links li {
+    list-style: none;
+    /*border: 1px solid white;*/
+    padding: 5px 0;
+    margin: 5px 0;
+    background: rgb(113,200,248);
+}
+
+ul.links li a{
+    color: white;
+    text-decoration: none;
+    font-size: 23px;
+}
+.table{
+    background: rgb(113,200,248);
+    color: white;
+    font-size: 23px;
+    padding: 20px 60px 20px;
+}
+.table div{
+    margin-top: 150px;
+}
+h3{
+    color: white;
+}
+.data-block span{
+    padding: 20px;
+    display: block;
+    background: white;
+    font-size: 20px;
+}
+.blockTimer{
+    display: none;
+}

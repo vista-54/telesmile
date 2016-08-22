@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<!--
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+<head>
+    <!--
+    Customize this policy to fit your own app's needs. For more guidance, see:
+        https://github.com/apache/cordova-plugin-whitelist/blob/master/README.md#content-security-policy
+    Some notes:
+        * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
+        * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
+        * Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
+            * Enable inline JS: add 'unsafe-inline' to default-src
+    -->
+    <!--<meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *">-->
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport"
+          content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" href="css/font-awesome-4.6.3/css/font-awesome.min.css">
+    <!--<link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css">-->
+    <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+    <!--<script   src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"     ></script>-->
+    <title>Hello World</title>
+</head>
+<body>
+<header>
+    <img src="img/logo2.png">
+</header>
+
+
+<div role="page" id="welcome">
+    <div class="wrapper">
+        <h1>Добро пожаловать</h1>
+
+        <div class="logo_parent">
+            <img src="img/logo2.png" alt="logo">
+        </div>
+        <h2>Благодарим Вас <br> за установку анонса приложения</h2>
+
+        <div style="color: white">До релиза осталось:</div>
+        <div class="blockTimer">
+            <div class="data-block">
+                <h3>дней</h3>
+                <span id="day">20</span>
+            </div>
+            <div class="data-block">
+                <h3>часов</h3>
+                <span id="hour">15</span>
+            </div>
+            <div class="data-block">
+                <h3>минут</h3>
+                <span id="min">40</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div role="page" id="links">
+    <div class="wrapper">
+        <ul class="links">
+            <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSchYaCRpQIh8BsMWG5Kg8PsSoRfqD4Q8z7GrCZDJaZ-G7Cy6g/viewform
+">Ознакомиться с функционалом будущего приложения, пройти опрос в Google формы и получить
+                бонус!</a></li>
+            <li><a href="http://konstruktor.telesmile.info/">Перейти в голосовой конструктор</a></li>
+            <li><a href="http://podarki.telesmile.info">Перейти в мастерскую TeleSmile</a></li>
+            <li><a href="https://boomstarter.ru/projects/487081/98141?token=85cd3bf1">Поддержать проект в краудфантинге</a></li>
+        </ul>
+    </div>
+
+</div>
+
+<div role="page" id="mail">
+    <div class="wrapper">
+        <div class="table">
+            Мы открыты для Ваших идей!
+            А так же будем рады сотрудничеству!
+            <div >
+                app@telesmile.info
+            </div>
+        </div>
+    </div>
+</div>
+<div class="footer">
+    <nav>
+        <i class="fa fa-circle" aria-hidden="true" data-page-num="1"></i>
+        <i class="fa fa-circle" aria-hidden="true" data-page-num="2"></i>
+        <i class="fa fa-circle" aria-hidden="true" data-page-num="3"></i>
+    </nav>
+</div>
+<script type="text/javascript" src="cordova.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+</body>
+</html>
