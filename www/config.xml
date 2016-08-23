@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 <widget id="io.cordova.hellocordova" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
-    <name>HelloCordova</name>
+    <name>Telesmile</name>
     <description>
         A sample Apache Cordova application that responds to the deviceready event.
     </description>
@@ -16,11 +16,11 @@
     <allow-intent href="sms:*" />
     <allow-intent href="mailto:*" />
     <allow-intent href="geo:*" />
-    <plugin name="org.li8.inappbrowser" spec="0.1" source="pgb" />
+    <plugin name="com.fantasyskiracer.inappbrowser" spec="1.0.4" source="pgb" />
+    <icon src="res/icon.png" />
     <platform name="android">
         <allow-intent href="market:*" />
     </platform>
-    <icon src="res/icon.png" />
     <platform name="ios">
         <allow-intent href="itms:*" />
         <allow-intent href="itms-apps:*" />

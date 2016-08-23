@@ -1,5 +1,12 @@
-$(document).ready(function(){
+document.addEventListener("deviceready", function () {
     window.open = cordova.InAppBrowser.open;
+},false);
+
+
+$(document).ready(function(){
+    $(document).on("swipe",function(){
+      console.log("swipe")
+    });
     app.init('welcome','1');
     app.goTimer();
     console.log('ready');
